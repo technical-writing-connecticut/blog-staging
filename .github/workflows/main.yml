@@ -3,37 +3,30 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 concurrency:
   group: pages
   cancel-in-progress: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 10
-
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: pnpm
-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-
       - name: Build static site
         env:
           PORT: 4173
@@ -41,15 +34,25 @@ jobs:
           VITE_GITHUB_REPO: ${{ github.repository }}
           VITE_GITHUB_APPROVED_LABEL: approved
         run: pnpm --filter @workspace/quiet-press run build
-
-      - name: Support client-side routes
-        run: cp artifacts/quiet-press/dist/public/index.html artifacts/quiet-press/dist/public/404.html
-
+      - name: Resolve Pages build output
+        id: pages-output
+        shell: bash
+        run: |
+          if [ -f artifacts/quiet-press/dist/public/index.html ]; then
+            output_dir="artifacts/quiet-press/dist/public"
+          elif [ -f artifacts/quiet-press/dist/index.html ]; then
+            output_dir="artifacts/quiet-press/dist"
+          else
+            echo "::error::Could not find the built index.html. Build output files:"
+            find artifacts/quiet-press -maxdepth 6 -type f -name index.html -print || true
+            exit 1
+          fi
+          echo "path=$output_dir" >> "$GITHUB_OUTPUT"
+          cp "$output_dir/index.html" "$output_dir/404.html"
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: artifacts/quiet-press/dist/public
-
+          path: ${{ steps.pages-output.outputs.path }}
   deploy:
     needs: build
     runs-on: ubuntu-latest
