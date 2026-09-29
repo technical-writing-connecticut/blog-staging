@@ -44,7 +44,7 @@ export const posts = [
     updatedAt: '2026-09-15',
     markdown: `
 
-Documenting APIs has been an almost magical experience. It’s one thing to write an announcement or a help center page and then test out the steps that you wrote with the software to see that everything works. It’s a whole other thing to document some endpoints, try to call them in Postman, and, if everything works, have that positive feedback loop of Postman returning your structured data in JSON. This is a very basic example of developer-facing documentation, I know, but for someone with more of a non-technical business background, this experience is kind of rewarding. 
+Documenting APIs has been an almost magical experience. It’s one thing to write an announcement or a help center page and then test out the steps that you wrote with the software to see that everything works. It’s a whole other thing to document some endpoints, try to call them in Postman, and, if everything works, have that positive feedback loop of Postman returning your structured data in JSON. This is a very basic example of developer-facing documentation, I know, but for someone with more of a non-technical business background, this experience has been rewarding as I deepen my knowledge of APIs. 
 
 After creating my first set of API docs for a job search aggregator that I developed with Replit, I created another set of docs for an entirely different side project – a hotel rowing machine directory. This latter example was far simpler as it was a very public API. Unlike my job search aggregation API, users don’t need an API key to access the rowing API. They can just call it. . This one was easier to document – partly because it was less complex but also partly because I had documented an API before.
 
