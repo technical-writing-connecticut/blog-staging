@@ -34,6 +34,21 @@ export const posts = [
 
   {
     slug: 'technical-writers-builders',
+    title: 'Additional Lessons from Designing And Developing API Docs',
+    dek: 'Many of the skills that technical writers use to build documentation directly translate to software development.',
+    status: 'published',
+    author: 'Jay',
+    readTime: 7,
+    tags: ['Docs', 'APIs'],
+    publishedAt: '2026-09-15',
+    updatedAt: '2026-09-15',
+    markdown: `test` 
+  },
+
+
+
+  {
+    slug: 'technical-writers-builders',
     title: 'Why Technical Writers Should Be Builders',
     dek: 'Many of the skills that technical writers use to build documentation directly translate to software development.',
     status: 'published',
