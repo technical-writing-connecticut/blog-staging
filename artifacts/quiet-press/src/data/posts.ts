@@ -52,9 +52,9 @@ Throughout these experiences, I learned a few things about documenting APIs. The
 
 Install a theme for your documentation if you are using a GitHub repository. Earlier this summer, I taught myself Markdown and created documentation with very basic pages — essentially plain text with some headings and bullet points. Markdown was very easy to learn — I picked it up in a weekend — especially for someone with some (limited) HTML experience. The documentation looked OK, but it wasn’t well organized or laid out well. To tackle this challenge, I sought out a theme for the repository and landed on Docsify. This theme has a couple of advantages from the very practical to the very aesthetic:
 
-#	Navigation. The Docsify theme comes with a left panel that offers in-article navigation. To that end, this bar uses links to connect the reader directly to the sub-sections of your documentation (for example, the endpoints section). With this navigation, readers can easily find the information they need to get started with and get the most out of your API without endlessly scrolling through your docs.
-#	Asthetics. The Docsify theme just has a great appearance. For example, the code blocks have a light gray background, and the font is almost typewriter-like. I also like that the short blocks for email addresses and URLs have a similar gray background with orange text. This kind of design really pops out and is more visually appealing than standard black and white text.
-#	Clarity. The Docsify theme provides a clear design for tables. Each cell has a light gray border that delineates each data point from another. At a glance, this text is much easier to read. Each column also has a clear header with a bolded title, which makes it easy to find the information that you need, whether it’s the purpose of a particular endpoint or a description of a query parameter.
+*	Navigation. The Docsify theme comes with a left panel that offers in-article navigation. To that end, this bar uses links to connect the reader directly to the sub-sections of your documentation (for example, the endpoints section). With this navigation, readers can easily find the information they need to get started with and get the most out of your API without endlessly scrolling through your docs.
+*	Asthetics. The Docsify theme just has a great appearance. For example, the code blocks have a light gray background, and the font is almost typewriter-like. I also like that the short blocks for email addresses and URLs have a similar gray background with orange text. This kind of design really pops out and is more visually appealing than standard black and white text.
+*	Clarity. The Docsify theme provides a clear design for tables. Each cell has a light gray border that delineates each data point from another. At a glance, this text is much easier to read. Each column also has a clear header with a bolded title, which makes it easy to find the information that you need, whether it’s the purpose of a particular endpoint or a description of a query parameter.
 
 Use AI platforms to check your work but don’t rely upon it. These tools did an amazing job at providing edits, such as catching grammar and style errors. It also did a fairly good job at catching inconsistencies between values I listed in tables and the OpenAPI response I received from my app. For someone who doesn’t have a ton of experience in the field, but who is constantly growing their knowledge, it provided a good baseline of what to expect. Furthermore, you can ask these platforms to rate your documentation out of 10 so you can have an idea of when your material is portfolio-ready. But, as is usually the case, there are caveats for using AI. One of the biggest errors I found is that these platforms sometimes suggested changes to the responses. I didn’t make these because I tested my docs in Postman, and the responses I included in the docs were the exact responses I received. So changing them at the suggestion of AI would be incorrect. This is a great reminder that AI is a tool — it is a great editor sometimes — but it is not the end-all-be-all, and you should not completely rely upon it. The human judgement here — knowing that the responses should not be changed — is essential. 
 
@@ -64,10 +64,10 @@ Ensure that you are using proper Markdown format beyond the JSON response sample
 
 With my (growing) experience documenting APIs, I learned how to effectively (get a start at) using a theme to organize my documentation by:
 
-#	Make it more visually appealing
-#	use Claude and ChatGPT as an editor but not a writer without guardrails
-#	Not to show my API keys in the documentation
-#	Use proper Markdown format when needed
+*	Make it more visually appealing
+*	use Claude and ChatGPT as an editor but not a writer without guardrails
+*	Not to show my API keys in the documentation
+*	Use proper Markdown format when needed
 
 However, I know I have so, so much more to learn. Once you dive into the subject for the first time, you do learn how much you really don’t know and how much more there is to learn. Now, I am interested in your thoughts. Have you ever documented an API? What are some lessons that you learned when you were just starting out? If there was one thing you wished you knew when you started documenting APIs what would that be? Open a GitHub issue and let me know in the comments.    
     ` 
