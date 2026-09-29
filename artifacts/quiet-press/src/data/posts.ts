@@ -65,7 +65,7 @@ Ensure that you are using proper Markdown format beyond the JSON response sample
 With my (growing) experience documenting APIs, I learned how to effectively (get a start at) using a theme to organize my documentation by:
 
 *	Make it more visually appealing
-*	use Claude and ChatGPT as an editor but not a writer without guardrails
+*	Use Claude and ChatGPT as an editor but not a writer without guardrails
 *	Not to show my API keys in the documentation
 *	Use proper Markdown format when needed
 
