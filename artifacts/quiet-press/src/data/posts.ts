@@ -66,7 +66,7 @@ Aside from themes, here are a few more lessons I learned from designing the docs
 
 With my (growing) experience documenting APIs, I learned how to effectively (get a start at) using a theme to organize my documentation by:
 
-*	Make it more visually appealing
+*	Improve design aesthetics
 *	Use Claude and ChatGPT as an editor but not a writer without guardrails
 *	Don't display API keys in the documentation
 *	Use proper Markdown format when needed
