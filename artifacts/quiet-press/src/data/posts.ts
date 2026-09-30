@@ -54,9 +54,9 @@ Install a theme for your documentation if you are using a GitHub repository. Ear
 
 The Docsify theme has a couple of advantages from the very practical to the very aesthetic:
 
-*	**Navigation**. The Docsify theme comes with a left panel that offers in-article navigation. With the theme, links on the left panel of the page connect the reader directly to the sub-sections of your documentation (for example, the endpoints section). As users peruse these options, they can easily find the information they need to get started with and get the most out of your API — without endlessly scrolling through your docs.
-*	**Asthetics**. The Docsify theme just has a great design aesthetic. For example, the code blocks have a light gray background, and the font is almost typewriter-like. I also like that the short blocks for email addresses and URLs have a similar gray background with orange text. This kind of design really pops and is more sophisticated than standard black and white text.
-*	**Clarity**. The Docsify theme provides a clear design for tables. Each cell has a light gray border that delineates each data point from another. At a glance, this text is much easier to read. Each column also has a clear header with a bolded title, which makes it easy to find the information that you need, whether it’s the purpose of a particular endpoint or a description of a query parameter.
+*	**Navigation**. Links on the left panel of the page connect the reader directly to the sub-sections of your documentation (for example, the endpoints section). As users peruse these options, they can easily find the information they need to get started with and get the most out of your API — without endlessly scrolling through your docs.
+*	**Asthetics**. Great design aesthetic. For example, the code blocks have a light gray background, and the font is almost typewriter-like. I also like that the short blocks for email addresses and URLs have a similar gray background with orange text. This kind of design really pops and is more sophisticated than standard black and white text.
+*	**Clarity**. Clear design for tables. Each cell has a light gray border that delineates each data point from another. At a glance, this text is much easier to read. Each column also has a clear header with a bolded title, which makes it easy to find the information that you need, whether it’s the purpose of a particular endpoint or a description of a query parameter.
 
 Aside from themes, here are a few more lessons I learned from designing the docs for two APIs I created as side projects:
 
