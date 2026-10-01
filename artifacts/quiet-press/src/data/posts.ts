@@ -40,8 +40,8 @@ export const posts = [
     author: 'Jay',
     readTime: 7,
     tags: ['Docs', 'APIs', `Docsify`],
-    publishedAt: '2026-09-15',
-    updatedAt: '2026-09-15',
+    publishedAt: '2026-10-01',
+    updatedAt: '2026-10-01',
     markdown: `
 
 My API documentation journey continues. It started with API docs that I designed for a job posting aggregator, which I developed as a web app and an API with Replit. I then created another set of docs for an entirely different side project – a hotel rowing machine directory web app and an API (also made with Replit). This latter example was far simpler for a few reasons. Fewer endpoints. No authentication. I also had the experience of documenting an API before, which made the design a bit easier the second time around.
