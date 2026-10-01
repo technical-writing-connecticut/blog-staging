@@ -44,7 +44,7 @@ export const posts = [
     updatedAt: '2026-09-15',
     markdown: `
 
-My API documentation journey continues. It started with API docs that I designed for a job posting aggregator, which I developed as a web app an API with Replit. I then created another set of docs for an entirely different side project – a hotel rowing machine directory web app and API (also made with Replit). This latter example was far simpler for a few reasons. Fewer endpoints. No authentication. I also had the experience of documenting an API before, which made the design a bit easier the second time around.
+My API documentation journey continues. It started with API docs that I designed for a job posting aggregator, which I developed as a web app an API with Replit. I then created another set of docs for an entirely different side project – a hotel rowing machine directory web app and an API (also made with Replit). This latter example was far simpler for a few reasons. Fewer endpoints. No authentication. I also had the experience of documenting an API before, which made the design a bit easier the second time around.
 
 These experiences have been a bit, well, magical, but in a very tangible way. There is a rewarding feedback loop of testing your own docs after you write them. Open Postman, call an endpoint, get a response. Try another endpoint. And then repeat the process. This is a very basic example of developer-facing documentation, I know, but for someone with more of a non-technical business background, this experience has been somewhat rewarding as I deepen my knowledge of APIs.
 
