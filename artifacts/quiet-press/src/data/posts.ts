@@ -66,14 +66,9 @@ Aside from themes, here are a few more lessons I learned from designing the docs
 
 * **Ensure that you are using proper Markdown format beyond the JSON response samples.** Throughout your documentation, there are ample opportunities to make important text stand out. Properly format key information, such as endpoints, parameters, URLs and email addresses, like code snippets, so they stand out. Sometimes this information resides inside tables, like endpoints and parameters, so check through your documents to ensure that you don’t miss it. This kind of formatting makes the important information easy to find and also differentiates code from text.
 
-With my (growing) experience documenting APIs, I learned how to effectively (get a start at) using a theme to organize my documentation by:
+With my (growing) experience documenting APIs, I learned how to effectively install a theme, use Claude and ChatGPT to help determine when docs are ready to be shared, keep API keys safe, and use proper Markdown format when needed.
 
-*	Improve design aesthetics
-*	Use Claude and ChatGPT as an editor but not a writer without guardrails
-*	Don't display API keys in the documentation
-*	Use proper Markdown format when needed
-
-However, I know I have so much more to learn about how to best design API docs. Once you start exploring a subject for the first time, you do learn how much you really don’t know and how much more there is to learn. Now, I am interested in your thoughts. Have you ever documented an API? What are some lessons that you learned when you were just starting out? If there was one thing you wished you knew when you started documenting APIs what would that be? Open a GitHub issue and let me know in the comments.    
+However, I know I have so much more to learn about designing API docs. Once you start exploring a subject for the first time, you learn how much more there is to know and that is exactly where I am at. Now, I am interested in your thoughts. Have you ever documented an API? What are some lessons that you learned when you were just starting out? What is the one thing you wished you knew when you started documenting APIs? Open a GitHub issue and let me know in the comments.    
     ` 
   },
 
