@@ -68,7 +68,9 @@ Aside from themes, here are a few more lessons I learned from designing the docs
 
 With my (growing) experience documenting APIs, I learned how to effectively install a theme, use Claude and ChatGPT to help determine when docs are ready to be shared, keep API keys safe, and use proper Markdown format when needed.
 
-However, I know I have so much more to learn about designing API docs. Once you start exploring a subject for the first time, you learn how much more there is to know and that is exactly where I am at. Now, I am interested in your thoughts. Have you ever documented an API? What are some lessons that you learned when you were just starting out? What is the one thing you wished you knew when you started documenting APIs? Open a GitHub issue and let me know in the comments.    
+However, I know I have so much more to learn about designing API docs. Once you start exploring a subject for the first time, you learn how much more there is to know and that is exactly where I am at.
+
+Now, I am interested in your thoughts. Have you ever documented an API? What are some lessons that you learned when you were just starting out? What is the one thing you wished you knew when you started documenting APIs? Open a GitHub issue and let me know in the comments.    
     ` 
   },
 
