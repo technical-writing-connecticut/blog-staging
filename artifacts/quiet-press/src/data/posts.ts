@@ -59,8 +59,8 @@ The coolest thing I have done yet was creating an Model Context Protocol (MCP) s
   Ok, can you build an MCP for OpenAI? You are a job seeker looking to find jobs in my database. Once you find a job, you would like to apply. Build for this use case.
 
   \`\`\` 
-
-Replit built the MCP server and provided a link. I opened OpenAI and tried to add a custom MCP server. Originally, I selected OAuth for the authentication, which later proved to be a small mistake. Why? The MCP was public and read-only, so it had no OAuth settings to discover. Once I changed the setting to no authentication, I was good to go. I opened Chat and asked ChatGPT this prompt:
+  
+  Replit built the MCP server and provided a link. I opened OpenAI and tried to add a custom MCP server. Originally, I selected OAuth for the authentication, which later proved to be a small mistake. Why? The MCP was public and read-only, so it had no OAuth settings to discover. Once I changed the setting to no authentication, I was good to go. I opened Chat and asked ChatGPT this prompt:
 
   \`\`\` 
   
