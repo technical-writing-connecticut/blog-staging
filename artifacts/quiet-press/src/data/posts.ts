@@ -54,11 +54,11 @@ I had been using my own app on a Replit subdomain, so I thought it was time to g
 
 The coolest thing I have done yet was creating an Model Context Protocol (MCP) server. Many software companies are releasing MCPs for their platforms, and I wanted first-hand experience in creating my own. It was relatively simple – and only took a few prompts to get right. Here is what I prompted Replit:
 
-/`Ok, can you build an MCP for OpenAI? You are a job seeker looking to find jobs in my database. Once you find a job, you would like to apply. Build for this use case./`
+````Ok, can you build an MCP for OpenAI? You are a job seeker looking to find jobs in my database. Once you find a job, you would like to apply. Build for this use case.````
 
 Replit built the MCP server and provided a link. I opened OpenAI and tried to add a custom MCP server. Originally, I selected OAuth for the authentication, which later proved to be a small mistake. Why? The MCP was public and read-only, so it had no OAuth settings to discover. Once I changed the setting to no authentication, I was good to go. I opened Chat and asked ChatGPT this prompt:
 
-/`@Findmyrole Give me the five most recent technical writing roles./`
+````@Findmyrole Give me the five most recent technical writing roles./````
 
 Once I typed this prompt, ChatGPT returned the five most recently posted technical writing roles from my platform, sorted by posting date, newest first. The listings spanned the US, Israel, Costa Rica, India, and remote positions. And ChatGPT provided links to review the listings and apply. It even asked if I was looking for US-based or remote roles and told me that I could narrow the results to those positions, including opportunities that allow me to work from my home state of Connecticut.
 
