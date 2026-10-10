@@ -34,6 +34,46 @@ export const posts = [
 
   {
     slug: 'technical-writers-builders',
+    title: 'Creating The Job Aggregator',
+    dek: 'Learnings from creating an aggregator that searches company websites for open roles..',
+    status: 'published',
+    author: 'Jay',
+    readTime: 7,
+    tags: ['Building', 'Apps', `Replit`],
+    publishedAt: '2026-10-01',
+    updatedAt: '2026-10-01',
+    markdown: `
+
+I have searched for a new role on the job boards for months. And the job boards great. I have found many roles that I have interviewed for and landed over the years that I have loved through the job boards. But I wanted to expand my search a bit further, so I came up with the idea for an aggregator that would search through the career websites of the companies that I am interested in working. It would search through the platforms that these companies have for their own job boards (think the common recruiting software platforms like Lever, Ashby, and Greenhouse.) The aggregator would do a run where it looks for technical writing, and related, roles, and return a list of open roles in a table. Then, I could click on a job title to go to the company website to apply to the role directly.
+
+I started with the core idea of technical writing, developer advocacy, and learning & development roles because those were job titles that I was targeting in my job search. I prompted Replit to build an early version of the aggregator. The aggregator ran manually. Since I had not deployed the website to the world, there was a button on the homepage to start the aggregation run. Later, when, I publicized the website, I would put this button behind the administration panel so any user couldn’t click the button continuously, using my tokens, and driving up the cost of the app. As I started reviewing the results, I realized that my search was too narrow. I have read on LinkedIn that many technical writers have titles that are no longer just “technical writer,” so I expanded the search to include related terms like “content engineer.”
+
+After building out the web app, I decided to build out an API so I could practice documenting another API. A link to the API docs displayed on the side panel, and, when I later added a contact button, the agent listed the contact button before the API docs, so I later switched the order as design choice, since a user is likely to want to review the API docs before the contact information, or, at least, likely used to seeing a contact or help button toward the bottom of the menu. A few weeks after I introduced the API, I thought my job board might be valuable to other members of the community, so I decided it was time to share it with the world.
+
+I had been using my own app on a Replit subdomain, so I thought it was time to get a domain name. The investment was only $10, and I thought it was a small price to pay for a more professional sounding website, especially because I had listed this project under a Replit sub domain on my resume for so long. The actual process of linking a new domain name with Replit was simple – I just changed a few DNS records – and, then, after a few minutes, the domain name was connected and everything wad functioning normally. 
+
+The coolest thing I have done yet was creating an Model Context Protocol (MCP) server. Many software companies are releasing MCPs for their platforms, and I wanted first-hand experience in creating my own. It was relatively simple – and only took a few prompts to get right. Here is what I prompted Replit:
+
+/`Ok, can you build an MCP for OpenAI? You are a job seeker looking to find jobs in my database. Once you find a job, you would like to apply. Build for this use case./`
+
+Replit built the MCP server and provided a link. I opened OpenAI and tried to add a custom MCP server. Originally, I selected OAuth for the authentication, which later proved to be a small mistake. Why? The MCP was public and read-only, so it had no OAuth settings to discover. Once I changed the setting to no authentication, I was good to go. I opened Chat and asked ChatGPT this prompt:
+
+/`@Findmyrole Give me the five most recent technical writing roles./`
+
+Once I typed this prompt, ChatGPT returned the five most recently posted technical writing roles from my platform, sorted by posting date, newest first. The listings spanned the US, Israel, Costa Rica, India, and remote positions. And ChatGPT provided links to review the listings and apply. It even asked if I was looking for US-based or remote roles and told me that I could narrow the results to those positions, including opportunities that allow me to work from my home state of Connecticut.
+
+I could see the value of the MCP over the API and the table version. It is a much less time investment prompting for the information you would like to see instead of looking through tables or records to get to the information you need. Furthermore, ChatGPT asked how it could refine the results, which makes it much easier to pin down specific geographies or working styles. Lastly, the creation and integration of the MCP only took a few minutes – it was well worth the (small) time investment.
+
+I do think that this app could be easily broadened to cover a wide range of jobs – far beyond technical writing, learning & development, and developer relations. I plan to keep the app limited for now to make it easier to scan through the tables and lead to faster run times every time I ask the app to look through company websites for jobs, but it could become a larger project someday just by adding more keywords for the system to search.
+
+I also believe this is an innovative approach to to the job search. Instead of relying on job boards – which I still believe hold immense value – this provides just another avenue to expand your horizons a bit and go directly to the source. I always believe increasing your surface area because this ends up leading to more opportunities and more opportunities ends up in (hopefully) a role laned.
+
+
+ ` 
+  },
+  
+  {
+    slug: 'technical-writers-builders',
     title: 'Designing And Developing API Docs',
     dek: 'Tips for documenting APIs that might be valuable for anyone just getting their start.',
     status: 'published',
