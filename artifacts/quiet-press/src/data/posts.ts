@@ -34,7 +34,7 @@ export const posts = [
 
   {
     slug: 'technical-writers-builders',
-    title: 'Acccessing A Database of Open Roles with AI, an API, and an MCP',
+    title: 'Acccessing Open Roles with AI, an API, and an MCP',
     dek: 'Learnings from creating an aggregator that searches company websites for job postings.',
     status: 'published',
     author: 'Jay',
