@@ -52,7 +52,7 @@ After building out the web app, I decided to build out an API so I could practic
 
 I had been using my own app on a Replit subdomain, so I thought it was time to get a domain name. The investment was only $10, and I thought it was a small price to pay for a more professional sounding website, especially because I had listed this project under a Replit sub domain on my resume for so long. The actual process of linking a new domain name with Replit was simple – I just changed a few DNS records – and, then, after a few minutes, the domain name was connected and everything wad functioning normally. 
 
-The coolest thing I have done yet was creating an Model Context Protocol (MCP) server. Many software companies are releasing MCPs for their platforms, and I wanted first-hand experience in creating my own. It was relatively simple – and only took a few prompts to get right. Here is what I prompted Replit:
+The coolest thing I have done yet was creating an Model Context Protocol (MCP) server. Many software companies are releasing MCPs for their platforms, and I wanted first-hand experience in creating my own. It was relatively simple – and only took a few prompts to get right. Here is what I prompted Replit (side note: I originally prompted Replit with this all on one line, but I separated the line here to prevent the styling of the page from truncating the text):
 
   \`\`\` 
   
