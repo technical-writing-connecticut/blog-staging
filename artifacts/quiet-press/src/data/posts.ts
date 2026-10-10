@@ -56,7 +56,9 @@ The coolest thing I have done yet was creating an Model Context Protocol (MCP) s
 
   \`\`\` 
   
-  Ok, can you build an MCP for OpenAI? You are a job seeker looking to find jobs in my database...
+  Ok, can you build an MCP for OpenAI? 
+  
+  You are a job seeker looking to find jobs in my database...
   
   Once you find a job, you would like to apply. Build for this use case.
 
