@@ -32,101 +32,34 @@ const heading = (value: string): ContentBlock => ({ type: 'heading', value });
 
 export const posts = [
 
-  {
+    {
     slug: 'technical-writers-builders',
-    title: 'Acccessing Open Roles with AI, an API, and an MCP',
-    dek: 'Learnings from creating an aggregator that searches company websites for job postings.',
+    title: 'To Write With or Without AI? It depends',
+    dek: 'It’s a real 2026 questions, especially for someone who usually writes for a living..',
     status: 'published',
     author: 'Jay',
     readTime: 7,
-    tags: ['Building', 'Apps', `Replit`],
-    publishedAt: '2026-10-01',
-    updatedAt: '2026-10-01',
+    tags: ['Docs', 'APIs'],
+    publishedAt: '2026-10-21',
+    updatedAt: '2026-10-21',
     markdown: `
-
-I have searched for a new role on the job boards for months. And the job boards great. I have found many roles that I have interviewed for and landed over the years that I have loved through the job boards. But I wanted to expand my search a bit further, so I came up with the idea for an aggregator that would search through the career websites of the companies that I am interested in working. It would search through the platforms that these companies have for their own job boards (think the common recruiting software platforms like Lever, Ashby, and Greenhouse.) The aggregator would do a run where it looks for technical writing, and related, roles, and return a list of open roles in a table. Then, I could click on a job title to go to the company website to apply to the role directly.
-
-I started with the core idea of technical writing, developer advocacy, and learning & development roles because those were job titles that I was targeting in my job search. I prompted Replit to build an early version of the aggregator. The aggregator ran manually. Since I had not deployed the website to the world, there was a button on the homepage to start the aggregation run. Later, when, I publicized the website, I would put this button behind the administration panel so any user couldn’t click the button continuously, using my tokens, and driving up the cost of the app. As I started reviewing the results, I realized that my search was too narrow. I have read on LinkedIn that many technical writers have titles that are no longer just “technical writer,” so I expanded the search to include related terms like “content engineer.”
-
-After building out the web app, I decided to build out an API so I could practice documenting another API. A link to the API docs displayed on the side panel, and, when I later added a contact button, the agent listed the contact button before the API docs, so I later switched the order as design choice, since a user is likely to want to review the API docs before the contact information, or, at least, likely used to seeing a contact or help button toward the bottom of the menu. A few weeks after I introduced the API, I thought my job board might be valuable to other members of the community, so I decided it was time to share it with the world.
-
-I had been using my own app on a Replit subdomain, so I thought it was time to get a domain name. The investment was only $10, and I thought it was a small price to pay for a more professional sounding website, especially because I had listed this project under a Replit sub domain on my resume for so long. The actual process of linking a new domain name with Replit was simple – I just changed a few DNS records – and, then, after a few minutes, the domain name was connected and everything wad functioning normally. 
-
-The coolest thing I have done yet was creating an Model Context Protocol (MCP) server. Many software companies are releasing MCPs for their platforms, and I wanted first-hand experience in creating my own. It was relatively simple – and only took a few prompts to get right. Here is what I prompted Replit (side note: I originally prompted Replit with this all on one line, but I separated the line here to prevent the styling of the page from truncating the text):
-
-  \`\`\` 
-  
-  Ok, can you build an MCP for OpenAI? 
-  
-  You are a job seeker looking to find jobs in my database...
-  
-  Once you find a job, you would like to apply. Build for this use case.
-
-  \`\`\` 
-  
-  Replit built the MCP server and provided a link. I opened OpenAI and tried to add a custom MCP server. Originally, I selected OAuth for the authentication, which later proved to be a small mistake. Why? The MCP was public and read-only, so it had no OAuth settings to discover. Once I changed the setting to no authentication, I was good to go. I opened Chat and asked ChatGPT this prompt:
-
-  \`\`\` 
-  
-  @Findmyrole Give me the five most recent technical writing roles.
-
-  \`\`\` 
-
-Once I typed this prompt, ChatGPT returned the five most recently posted technical writing roles from my platform, sorted by posting date, newest first. The listings spanned the US, Israel, Costa Rica, India, and remote positions. And ChatGPT provided links to review the listings and apply. It even asked if I was looking for US-based or remote roles and told me that I could narrow the results to those positions, including opportunities that allow me to work from my home state of Connecticut.
-
-I could see the value of the MCP over the API and the table version. It is a much less time investment prompting for the information you would like to see instead of looking through tables or records to get to the information you need. Furthermore, ChatGPT asked how it could refine the results, which makes it much easier to pin down specific geographies or working styles. Lastly, the creation and integration of the MCP only took a few minutes – it was well worth the (small) time investment.
-
-I do think that this app could be easily broadened to cover a wide range of jobs – far beyond technical writing, learning & development, and developer relations. I plan to keep the app limited for now to make it easier to scan through the tables and lead to faster run times every time I ask the app to look through company websites for jobs, but it could become a larger project someday just by adding more keywords for the system to search.
-
-I also believe this is an innovative approach to to the job search. Instead of relying on job boards – which I still believe hold immense value – this provides just another avenue to expand your horizons a bit and go directly to the source. I always believe increasing your surface area because this ends up leading to more opportunities and more opportunities ends up in (hopefully) a role laned.
+Lately, I have been thinking about writing with and without AI. It’s a real 2026 questions, especially for someone who usually writes for a living. When should I use an LLM to generate text, and when should I write something the old-fashioned way? If I use an LLM will I gain a new perspective or will I lose a perspective I might have had if I had typed out the document? There are no easy answers.
+When I think about writing, I remember a few things from my school days that I still carry with me. One is that writing is a process. You draft, and then you revise and revise again. Another is that you outline before you write. Anyone remember those old five-paragraph essays? But here’s the thing: Even the best laid plans, don’t go according to plan. Or, rather, sometimes the best laid plans don’t go to plan, and it actually works out better that way.
+Many times I will start with an outline of an article or essay only to learn something along the way that takes me in another direction. That is because writing is as much about getting words on the page as it is about thinking. By writing, you have the opportunity to think through an idea. And that idea is a real living thing that evolves over the time you work with it. However, some of that is lost when you enter a prompt. 
+Sure, you can continue chatting with the LLM and refine your approach after you see what the model generates. But, because you are not the one doing most of the work “generating” the text, something might be lost. Well, what is lost is the journey, and the chat just brings you to the destination. That being said, not every writing process is a journey and chat is good at creating some text:
+Chat excels at creating the first draft of highly structured and concrete ideas. Software documentation is an excellent example of that. Software code is concrete. Software works through defined paths pre-determined by developers who are guided by product managers. Predictable, no, and that is where writers come in with the second and third draft. But the first pass created by chat is a good starting point.
+Here, chat saves time by developing documentation that is 80 or 90 percent there based on the predictable inputs of product specs that product or engineering outlined and other source material available at the time of writing. But, of course, the work doesn’t stop there. And that’s the key point to remember, the draft here is just the beginning, even if the beginning brings you closer to the finish line.
+Technical writers have the in-depth product knowledge combined with the human brain that know how software should work and how people will use that software. So, when the chat creates the first drafts, we are key to testing out the documentation to not only see if the steps follow the actual software behavior but to also see if the software is actually behaving as expected and if any bugs need to be reported by the developer.
+By contrast, some writing is better left to drafting without chat, in my opinion. For one, complex software flows and mission-critical software, where every detail is absolutely crucial, these are cases where writing shouldn’t be left to chat. In the former, chat might miss too many of the nuances, and for the latter, it’s crucial to get all of those nuances – and frankly everything right.
+But, for ideas that are more abstract, where there are nuances around every corner, where the meaning of every word and every concept that the words link is crucially important, that is where the old process of outlining, drafting, revise, revise, and revise is more crucial than ever. Unlike predetermined software flows with define outcomes, here is where the writer might have thought about an idea one way at first only to come to a different conclusion by the end of their journey. 
+Now, I fully realize that chat is far more than prompting. There are ways that you can provide so much more context than a prompt ever can. You can create skills.md files, and you can upload examples and documents for additional context. And this works really well for those defined concrete software flows where more information without more human judgement in the drafting process is important.
+The questions to ask when deciding between using AI to create a first draft could be is the idea you are writing about abstract or concrete. And then the next question is do I need lots of human judgement in the writing process or will I save time but not lose meaning or important details if I use human judgement when drafting the response. And the answer might not be the same for similar occasions or maybe that judgement is hard to make.
+We’re all humans, after all.
 
 
- ` 
+    `
   },
   
-  {
-    slug: 'technical-writers-builders',
-    title: 'Designing And Developing API Docs',
-    dek: 'Tips for documenting APIs that might be valuable for anyone just getting their start.',
-    status: 'published',
-    author: 'Jay',
-    readTime: 7,
-    tags: ['Docs', 'APIs', `Docsify`],
-    publishedAt: '2026-10-01',
-    updatedAt: '2026-10-01',
-    markdown: `
-
-My API documentation journey continues. It started with API docs that I designed for a job posting aggregator, which I developed as a web app and an API with Replit. I then created another set of docs for an entirely different side project – a hotel rowing machine directory web app and an API (also made with Replit). This latter example was far simpler for a few reasons. Fewer endpoints. No authentication. I also had the experience of documenting an API before, which made the design a bit easier the second time around.
-
-These experiences have been a bit, well, magical, but in a very tangible way. There is a rewarding feedback loop of testing your own docs after you write them. Open Postman, call an endpoint, get a response. Try another endpoint. And then repeat the process. This is a very basic example of developer-facing documentation, I know, but for someone with more of a non-technical business background, this experience has been somewhat rewarding as I deepen my knowledge of APIs.
-
-Throughout these experiences, I learned a few lessons that made it easier to design API docs. These are by no means an exhaustive list. Someone with extensive developer experience will likely know much more — and have much more sophisticated takeaways. And, naturally, as I experiment with more APIs, I will learn more about how they work and how to best document them. But, coming from the perspective of a beginner, here are some tips for documenting APIs that might be valuable for anyone just getting their start:
-
-__Install a theme for your documentation if you are using a GitHub repository.__ Earlier this summer, I taught myself Markdown and created documentation with very basic pages — essentially plain text with some headings and bullet points. Markdown was very easy to learn — I picked it up in a weekend — especially for someone with some (limited) Hypertext Markup Language (HTML) experience. The documentation looked OK, but it wasn’t well organized or designed. To enhance the aesthetics, I searched for a theme and landed on Docsify.
-
-The Docsify theme has a couple of advantages from the very practical to the very aesthetic:
-
-*	**Navigation**. Links on the left panel of the page connect the reader directly to the sub-sections of your documentation (for example, the endpoints section). As users peruse these options, they can easily find the information they need to get started with the API and get the most out of your platform — without endlessly scrolling through your docs.
-*	**Asthetics**. Great design aesthetic. For example, the code blocks have a light gray background, and the font is almost typewriter-like. I also like that the short blocks for email addresses and URLs have a similar gray background with orange text. This kind of design really pops and is more sophisticated than standard black and white text.
-*	**Clarity**. Clear design for tables. Each cell has a light gray border that delineates each data point from another. At a glance, this text is much easier to read. Each column also has a clear header with a bolded title, which makes it easy to find the information that you need, whether it’s the purpose of a particular endpoint or a description of a query parameter.
-
-Aside from themes, here are a few more lessons I learned from designing the docs for two APIs I created as side projects:
-
-* **Use AI platforms to check your work and get a baseline.** These tools did an amazing job at providing edits, such as catching grammar and style errors. It also did a fairly good job at catching inconsistencies between values I listed in tables and the OpenAPI response I received from my app. For someone who doesn’t have a ton of experience in the field, but who is constantly growing their knowledge, it provided a good baseline of what to expect. Furthermore, you can ask these platforms to rate your documentation out of 10 so you can have an idea of when your material is portfolio-ready. 
-
-* **Don’t display your API keys in the documentation.** This is advice that I think I actually received from Claude or ChatGPT. API keys are private, plain and simple. Don’t include them in your documentation because they could pose a security risk. If you want to include some content about API keys, keep your content generic. Instead of including an actual API key of course, make sure you use some filler content like \` Your-API-Key Here \`. Check thoroughly throughout your document because you never know where your API key might have been included.
-
-* **Ensure that you are using proper Markdown format beyond the JSON response samples.** Throughout your documentation, there are ample opportunities to make important text stand out. Properly format key information, such as endpoints, parameters, URLs and email addresses, like code snippets, so they stand out. Sometimes this information resides inside tables, like endpoints and parameters, so check through your documents to ensure that you don’t miss it. This kind of formatting makes the important information easy to find and also differentiates code from text.
-
-With my (growing) experience documenting APIs, I learned how to effectively install a theme, use Claude and ChatGPT to help determine when docs are ready to be shared, keep API keys safe, and use proper Markdown format when needed.
-
-However, I know I have so much more to learn about designing API docs. Once you start exploring a subject for the first time, you learn how much more there is to know and that is exactly where I am at.
-
-Now, I am interested in your thoughts. Have you ever documented an API? What are some lessons that you learned when you were just starting out? What is the one thing you wished you knew when you started documenting APIs? Open a GitHub issue and let me know in the comments.    
-    ` 
-  },
-
-
 
   {
     slug: 'technical-writers-builders',
