@@ -34,8 +34,8 @@ export const posts = [
 
     {
     slug: 'technical-writers-builders',
-    title: 'To Write With or Without AI? It depends',
-    dek: 'It’s a real 2026 questions, especially for someone who usually writes for a living..',
+    title: 'To Write with or without AI? It Depends',
+    dek: 'It’s a real 2026 questions, especially for someone who usually writes for a living.',
     status: 'published',
     author: 'Jay',
     readTime: 7,
