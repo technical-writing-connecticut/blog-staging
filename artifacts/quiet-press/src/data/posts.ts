@@ -34,8 +34,8 @@ export const posts = [
 
     {
     slug: 'technical-writers-builders',
-    title: 'To Write with or without AI? It Depends',
-    dek: 'It’s a real 2026 questions, especially for someone who usually writes for a living.',
+    title: 'To Write With or Without AI? It Depends',
+    dek: 'It’s a real 2026 question.',
     status: 'published',
     author: 'Jay',
     readTime: 7,
@@ -57,7 +57,7 @@ Beyond first drafts, what are some use cases where technical writers can work wi
 One area where chat excels is definitions. Sometimes I will have a bullet point list of definitions to include in technical documentation. These definitions are well-established industry terms that are specific and don’t change that much over time. In this case, prompting chat to create a one-sentence definition for each bullet point is a major time saver and these definitions usually don’t need to be reworked.
 Ideas
 Another area where chat excels is creating topics to write about. When I was building my rowing app, I prompted something to the effect of “If you were to create documentation for my app, what articles would you write?” I had already created an article or two about how to import data but I needed to think of more articles that would answer user questions when I was building out the knowledge center. The LLMs recommendations were spot-on, and I had AI write the first drafts of many of the articles.
-# Abstract
+# Abstract Ideas
 But, for ideas that are more abstract, where there are nuances around every corner, where the meaning of every word and every concept is crucially important, that is where the old process of outlining, drafting, revising, revising, and revising is more crucial than ever. Unlike predetermined software flows with define outcomes, here is where the writer might have thought about an idea one way at first only to come to a different conclusion by the end of their journey. 
 Now, I fully realize that chat is far more than prompting. There are ways that you can provide so much more context than a prompt ever can. You can create skills.md files, and you can upload examples and documents for additional context. And this works really well for those defined concrete software flows where more information without more human judgement in the drafting process is important.
 The questions to ask when deciding between using AI to create a first draft could include: is the idea you are writing about abstract or concrete? And then the next question could be: do I need lots of human judgement in the writing process or will I save time but not lose meaning or important details if I use chat? And the answer might not be the same for similar occasions. Maybe that judgement is hard to make.
