@@ -45,22 +45,39 @@ export const posts = [
     markdown: `
 
 Lately, I have been thinking about writing with and without AI. It’s a real 2026 question, especially for someone who usually writes for a living. When should I use an LLM to generate text, and when should I write something the old-fashioned way? If I use an LLM, will I gain a new perspective or will I lose a perspective? Would I have learned more had I wrote it myself? There are no easy answers.
+
 When I think about writing, I remember a few things from my school days that I still carry with me. One is that writing is a process. You draft, and then you revise and revise again. Another is that you outline before you write. Anyone remember those old five-paragraph essays? But here’s the thing: Even the best laid plans don’t go according to plan. Or, rather, sometimes the best laid plans don’t go to plan, and it actually works out better that way.
+
 Many times I will start with an outline of an article or essay only to learn something along the way that takes me in another direction. That is because writing is as much about getting words on the page as it is about thinking. By writing, you have the opportunity to think through an idea as you place the words on the page. And that idea is a real living thing that evolves over the time you work with it. However, some of that is lost when you enter a prompt. 
+
 Sure, you can continue chatting with the LLM and refine your approach after you see what the model generates. But, because you are not the one doing most of the work “generating” the text, something might be lost. Well, what is lost is the journey, and the chat just brings you to the destination. That being said, not every writing process needs to be a journey, and chat is good at creating some text.
+
 # Technical Documentation
+
 Chat excels at creating the first draft of highly structured and concrete ideas. Software documentation is an excellent example of that. Software code is concrete. Software works through defined pre-determined paths.  Developers code the features defined by product managers. Predictable, no, and that is where writers come in with the second and third draft. But the first pass created by chat is a good starting point.
+
 Here, chat saves time by developing documentation that is 80 or 90 percent there. It’s a meaningful start based on the predictable inputs of specs that product or engineering outlined and other source material available at the time of writing. But, of course, the work doesn’t stop there. And that’s the key point to remember, the draft here is just the beginning, even if the beginning brings you closer to the finish line.
+
 Technical writers have the in-depth product knowledge combined with the human brain. We know how software should work and how people will use software based on our human ways of experiencing the UI or developer tools. So, when the chat creates the first drafts, we are key to testing out the documentation. We not only determine if the steps follow the actual software behavior, but we also determine if the software is actually behaving as expected. If any bugs need to be fixed, we report them to the product manager or developer.
+
 Beyond first drafts, what are some use cases where technical writers can work with LLMs – and excel?
+
 # Definitions
+
 One area where chat excels is definitions. Sometimes I will have a bullet point list of definitions to include in technical documentation. These definitions are well-established industry terms that are specific and don’t change that much over time. In this case, prompting chat to create a one-sentence definition for each bullet point is a major time saver and these definitions usually don’t need to be reworked.
-Ideas
+
+# Idea Generation
+
 Another area where chat excels is creating topics to write about. When I was building my rowing app, I prompted something to the effect of “If you were to create documentation for my app, what articles would you write?” I had already created an article or two about how to import data but I needed to think of more articles that would answer user questions when I was building out the knowledge center. The LLMs recommendations were spot-on, and I had AI write the first drafts of many of the articles.
+
 # Abstract Ideas
+
 But, for ideas that are more abstract, where there are nuances around every corner, where the meaning of every word and every concept is crucially important, that is where the old process of outlining, drafting, revising, revising, and revising is more crucial than ever. Unlike predetermined software flows with define outcomes, here is where the writer might have thought about an idea one way at first only to come to a different conclusion by the end of their journey. 
+
 Now, I fully realize that chat is far more than prompting. There are ways that you can provide so much more context than a prompt ever can. You can create skills.md files, and you can upload examples and documents for additional context. And this works really well for those defined concrete software flows where more information without more human judgement in the drafting process is important.
+
 The questions to ask when deciding between using AI to create a first draft could include: is the idea you are writing about abstract or concrete? And then the next question could be: do I need lots of human judgement in the writing process or will I save time but not lose meaning or important details if I use chat? And the answer might not be the same for similar occasions. Maybe that judgement is hard to make.
+
 We’re all humans, after all.
 
 
